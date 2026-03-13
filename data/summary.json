@@ -1,0 +1,107 @@
+{
+  "ACT": {
+    "total": 1141,
+    "bbq": 400,
+    "picnic": 740,
+    "fuels": {
+      "electric": 184,
+      "gas": 33,
+      "wood": 141
+    }
+  },
+  "NSW": {
+    "total": 9814,
+    "bbq": 2309,
+    "picnic": 7451,
+    "fuels": {
+      "electric": 536,
+      "gas": 136,
+      "wood": 210,
+      "wood; electric": 1,
+      "wood; gas": 2,
+      "charcoal;wood": 3,
+      "yes": 1,
+      "lpg": 1,
+      "charcoal": 4
+    }
+  },
+  "NT": {
+    "total": 225,
+    "bbq": 92,
+    "picnic": 133,
+    "fuels": {
+      "gas": 16,
+      "electric": 14,
+      "no": 2,
+      "wood": 7
+    }
+  },
+  "Other": {
+    "total": 108,
+    "bbq": 32,
+    "picnic": 76,
+    "fuels": {
+      "wood": 25,
+      "electric": 1
+    }
+  },
+  "QLD": {
+    "total": 3586,
+    "bbq": 1394,
+    "picnic": 2188,
+    "fuels": {
+      "electric": 678,
+      "wood": 91,
+      "gas": 31,
+      "charcoal": 2,
+      "no": 1,
+      "coal": 1
+    }
+  },
+  "SA": {
+    "total": 1425,
+    "bbq": 444,
+    "picnic": 978,
+    "fuels": {
+      "electric": 153,
+      "wood": 4,
+      "gas": 18,
+      "charcoal": 1
+    }
+  },
+  "TAS": {
+    "total": 610,
+    "bbq": 175,
+    "picnic": 434,
+    "fuels": {
+      "gas": 11,
+      "electric": 68,
+      "wood": 7
+    }
+  },
+  "VIC": {
+    "total": 4263,
+    "bbq": 1148,
+    "picnic": 3112,
+    "fuels": {
+      "electric": 390,
+      "gas": 53,
+      "wood": 19,
+      "electrical": 1
+    }
+  },
+  "WA": {
+    "total": 1893,
+    "bbq": 721,
+    "picnic": 1161,
+    "fuels": {
+      "electric": 105,
+      "gas": 79,
+      "wood": 8,
+      "gas free": 1,
+      "unknown": 2,
+      "charcoal;wood": 1,
+      "electricity": 1
+    }
+  }
+}

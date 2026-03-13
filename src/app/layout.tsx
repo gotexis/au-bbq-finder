@@ -1,45 +1,58 @@
 import type { Metadata } from "next";
 import "./globals.css";
+import Link from "next/link";
 
 export const metadata: Metadata = {
   title: {
-    default: "SITE_TITLE",
-    template: "%s | SITE_TITLE",
+    default: "AU BBQ Finder — Every Public BBQ & Picnic Spot in Australia",
+    template: "%s | AU BBQ Finder",
   },
-  description: "SITE_DESCRIPTION",
+  description: "Find free public BBQs, picnic tables, and outdoor dining spots across Australia. Electric, wood, and gas BBQs with facilities info.",
   openGraph: {
-    title: "SITE_TITLE",
-    description: "SITE_DESCRIPTION",
-    url: "https://SUBDOMAIN.rollersoft.com.au",
-    siteName: "SITE_TITLE",
+    title: "AU BBQ Finder",
+    description: "Find free public BBQs, picnic tables, and outdoor dining spots across Australia.",
+    url: "https://bbq.rollersoft.com.au",
+    siteName: "AU BBQ Finder",
     locale: "en_AU",
     type: "website",
   },
   alternates: {
-    canonical: "https://SUBDOMAIN.rollersoft.com.au",
+    canonical: "https://bbq.rollersoft.com.au",
   },
-  robots: {
-    index: true,
-    follow: true,
-  },
+  robots: { index: true, follow: true },
 };
 
 export default function RootLayout({
   children,
 }: Readonly<{ children: React.ReactNode }>) {
   return (
-    <html lang="en" data-theme="DAISY_THEME">
+    <html lang="en" data-theme="autumn">
       <body className="min-h-screen bg-base-100 flex flex-col">
-        <header className="navbar bg-primary text-primary-content shadow-lg">
-          <div className="container mx-auto px-4">
-            <a className="text-xl font-bold" href="/">SITE_TITLE</a>
+        <header className="navbar bg-amber-800 text-amber-50 shadow-lg">
+          <div className="container mx-auto px-4 flex justify-between items-center">
+            <Link className="text-xl font-bold flex items-center gap-2" href="/">
+              🔥 AU BBQ Finder
+            </Link>
+            <nav className="hidden md:flex gap-4 text-sm">
+              <Link href="/" className="hover:underline">Home</Link>
+              <Link href="/map" className="hover:underline">Map</Link>
+              <Link href="/states" className="hover:underline">By State</Link>
+            </nav>
           </div>
         </header>
-        <main className="container mx-auto px-4 py-8 flex-1">
-          {children}
-        </main>
-        <footer className="footer footer-center p-6 bg-base-200 text-base-content">
-          <p>© {new Date().getFullYear()} SITE_TITLE. Data sourced from public records.</p>
+        <main className="flex-1">{children}</main>
+        <footer className="footer footer-center p-6 bg-base-200 text-base-content text-sm">
+          <p>
+            © {new Date().getFullYear()} AU BBQ Finder. Data from{" "}
+            <a href="https://www.openstreetmap.org/copyright" className="link" target="_blank" rel="noopener">
+              OpenStreetMap
+            </a>{" "}
+            contributors. A{" "}
+            <a href="https://rollersoft.com.au" className="link" target="_blank" rel="noopener">
+              Rollersoft
+            </a>{" "}
+            project.
+          </p>
         </footer>
       </body>
     </html>
